@@ -88,6 +88,17 @@ console.log(dice());
   Crea una funzione chiamata "whoIsBigger" che riceve due numeri come parametri e ritorna il maggiore dei due.
 */
 
+function whoIsBigger (numa, numb) {
+  if( numa > numb) {
+    return numa;
+  } else {
+    return numb;
+  } 
+}
+
+console.log(whoIsBigger(8, 17));
+console.log(whoIsBigger(14, 5));
+
 /* ESERCIZIO 3
   Crea una funzione chiamata "splitMe" che riceve una stringa come parametro e ritorna un'array contenente ogni parola della stringa.
 
