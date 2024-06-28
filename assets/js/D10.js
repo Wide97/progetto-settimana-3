@@ -78,7 +78,7 @@ console.log(me);
   Crea una funzione chiamata "dice": deve generare un numero casuale tra 1 e 6.
 */
 
-function dice (){
+function dice() {
   return Math.floor(Math.random() * 6) + 1;
 }
 
@@ -88,12 +88,12 @@ console.log(dice());
   Crea una funzione chiamata "whoIsBigger" che riceve due numeri come parametri e ritorna il maggiore dei due.
 */
 
-function whoIsBigger (numa, numb) {
-  if( numa > numb) {
+function whoIsBigger(numa, numb) {
+  if (numa > numb) {
     return numa;
   } else {
     return numb;
-  } 
+  }
 }
 
 console.log(whoIsBigger(8, 17));
@@ -104,6 +104,12 @@ console.log(whoIsBigger(14, 5));
 
   Es.: splitMe("I love coding") => ritorna ["I", "Love", "Coding"]
 */
+
+function splitMe(string) {
+  return string.split(' ');
+}
+
+console.log(splitMe('I love Coding'));
 
 /* ESERCIZIO 4
   Crea una funzione chiamata "deleteOne" che riceve una stringa e un booleano come parametri.
