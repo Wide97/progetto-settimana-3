@@ -179,6 +179,20 @@ console.log(whatDayIsIt());
   }
 */
 
+function rollTheDices(num7) {
+  //object = {
+  // sum: '',
+  //value: '',
+  // }
+  let object = { sum: 0, values: []};
+  for (i = 0; i < num7; i++) {
+    let dicea = dice();
+    object.sum = dicea + object.sum;
+  }
+}
+
+
+
 /* ESERCIZIO 9
   Scrivi una funzione chiamata "howManyDays" che riceve una data come parametro e ritorna il numero di giorni trascorsi da tale data.
 */
