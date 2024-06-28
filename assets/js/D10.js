@@ -202,7 +202,7 @@ function howManyDays(date) {
   let date1 = date.getTime();
   let todayDate1 = todayDate.getTime();
   let diffDate = todayDate1 - date1;
-  let finalDays = diffDate / (1000 / 60 / 60 / 24);
+  let finalDays = diffDate / (1000 * 60 * 60 * 24);
   return finalDays;
 }
 
@@ -544,13 +544,13 @@ emptyList();
 
 function addClassToTr() {
   var trTags = document.getElementsByTagName("tr");
-  
-  for (var i = 0; i < trTags.length; i++) {
-  trTags[i].classList.add("test");
-  }
-  }
 
-  addClassToTr();
+  for (var i = 0; i < trTags.length; i++) {
+    trTags[i].classList.add("test");
+  }
+}
+
+addClassToTr();
 
 // [EXTRA] JS Avanzato
 
