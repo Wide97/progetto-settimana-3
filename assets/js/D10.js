@@ -133,9 +133,26 @@ console.log(deleteOne('ciao', false));
   Es.: onlyLetters("I have 4 dogs") => ritorna "I have dogs"
 */
 
+function onlyLetters(sentence) {
+  return sentence.replace(/[0-9]/g, '');
+};
+
+console.log(onlyLetters("I have 4 dogs"));
+
 /* ESERCIZIO 6
   Crea una funzione chiamata "isThisAnEmail" che riceve una stringa come parametro e ritorna true se la stringa è un valido indirizzo email.
 */
+
+function isThisAnEmail(string) {
+  if (string.includes('@')) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+console.log(isThisAnEmail('mwidesott@gmail.com'));
+console.log(isThisAnEmail('mwidesottgmail.com'));
 
 /* ESERCIZIO 7
   Scrivi una funzione chiamata "whatDayIsIt" che ritorna il giorno della settimana corrente.
