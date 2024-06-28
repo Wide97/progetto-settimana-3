@@ -542,6 +542,16 @@ emptyList();
   Scrivi una funzione per aggiungere ad ogni tag <tr> la classe CSS "test"
 */
 
+function addClassToTr() {
+  var trTags = document.getElementsByTagName("tr");
+  
+  for (var i = 0; i < trTags.length; i++) {
+  trTags[i].classList.add("test");
+  }
+  }
+
+  addClassToTr();
+
 // [EXTRA] JS Avanzato
 
 /* ESERCIZIO 27
