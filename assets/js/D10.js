@@ -213,6 +213,17 @@ console.log(howManyDays(new Date('2024-06-12')));
   Scrivi una funzione chiamata "isTodayMyBirthday" che deve ritornare true se oggi è il tuo compleanno, falso negli altri casi.
 */
 
+function isTodayMyBirthday(date) {
+  let myBday = new Date('1997-08-12');
+  if (date.getDay() === myBday.getDay() && date.getMonth() === myBday.getMonth()){
+    return true;
+  }else{
+    return false;
+  }
+}
+
+console.log(isTodayMyBirthday(new Date()));
+
 
 
 const movies = [
